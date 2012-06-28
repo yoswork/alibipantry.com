@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Cakes";
+}
+
+@section head {
+    <link href="@Url.Content("~/Content/css/ad-gallery/jquery.ad-gallery.css")" rel="stylesheet" type="text/css" />
+	<script src="@Url.Content("~/Scripts/jquery.ad-gallery.pack.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            var galleries = $('.ad-gallery').adGallery({
+                width: 800,
+                heith: 600,
+                effect: 'fade',
+                display_back_and_forward: false,
+                slideshow: {
+                    enable: false
+                }
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        #gallery {
+            padding: 30px;
+            background: #d7e1e2;
+            font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Arial, sans-serif;
+        }
+    </style>
+}
+
+@section featured {
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@ViewBag.Title.</h1>
+        </hgroup>
+        <p>
+            For any occasion.
+        </p>
+    </div>
+</section>
+}
+
+<div style="text-align: center">
+    <div id="gallery" class="ad-gallery" style="margin-right: auto; margin-left: auto;">
+        <div class="ad-image-wrapper">
+        </div>
+        <div class="ad-controls">
+        </div>
+        <div class="ad-nav">
+            <div class="ad-thumbs">
+                <ul class="ad-thumb-list">
+                <li>
+                    <a href="../../images/Classic Wedding Cakes 1.jpg">
+                    <img src="../../images/thumbnails/Classic Wedding Cakes 1.jpg" title="Classic Wedding Cake" class="image0">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../images/Classic Wedding Cakes 2.jpg">
+                    <img src="../../images/thumbnails/Classic Wedding Cakes 2.jpg" title="Classic Wedding Cake" class="image1">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../images/Classic Wedding Cake Closeup.jpg">
+                    <img src="../../images/thumbnails/Classic Wedding Cake Closeup.jpg" title="Classic Wedding Cake" class="image2">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../images/Wedding Cheesecake Layer.jpg">
+                    <img src="../../images/thumbnails/Wedding Cheesecake Layer.jpg" title="Wedding Cheesecake" class="image3">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../images/Wedding Cheesecake Top.jpg">
+                    <img src="../../images/thumbnails/Wedding Cheesecake Top.jpg" title="Wedding Cheesecake" class="image4">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../images/Wedding Cheesecake Tiered.jpg">
+                    <img src="../../images/thumbnails/Wedding Cheesecake Tiered.jpg" title="Wedding Cheesecake" class="image5">
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="descriptions">
+</div>
